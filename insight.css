@@ -5,8 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-
-    
 }
 
 body {
@@ -19,7 +17,6 @@ body {
     /* height: 100vh; */
 
 }
-.nav-insights{}
 
 .orange-text {
     color: #dc7550;
