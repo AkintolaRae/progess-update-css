@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* height: 100vh; */
+
+}
+
+.orange-text {
+    color: #dc7550;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+h3{
+    font-weight: 400;
+}
+
+/* =============================end of nav========================== */
+
+.insight{
+    /* margin-top: 8rem; */
+    padding: 5rem;
+}
+
+.insight-text{
+    width: 31rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.insight-text h3{
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.insight-text p{
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+
+.insight-img img{
+    height: 500px;
+    width: 450px;
+}
+
+.insight-yellow{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 3rem;
+    background-color: #FEDA4F;
+    padding: 4rem;
+    cursor: pointer;
+}
+
+.insight-left{
+    padding-left: 3rem;
+    padding-right: 0;
+    padding-top: 7rem;
+}
+
+.latest{
+    font-weight: 100;
+    background-color: #D2EAC3;
+    color: #000000;
+    width: 80px;
+    padding: 4px;
+    height: 25px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 1.7rem;
+}
+.new1{
+    font-weight: 400;
+    background-color: white;
+    height: 25px;
+    padding: 4px;
+    color: #000000;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 1.2rem;
+    margin-bottom: 1.7rem;
+}
+.wisdom-image{
+    gap: 8rem;
+}
+
+.insight-left{
+    width: 600px;
+    
+}
+
+.island h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.island p{
+    line-height: 25px;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.island small{
+    font-size: 1rem;
+}
+.dot{
+    display: inline-block;
+}
+
+
+/* =============================================end of insight====================================== */
+
+
+
+.wisdom-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    height: 20rem;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 7rem;
+    padding: 4rem;
+}
+
+.first-img img {
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.first-img img:hover {
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 50%;
+}
+
+.wisdom-img-text {
+    background-color: #D2EAC3;
+    position: absolute;
+    width: 130px;
+    bottom: -50px;
+    left: 43%;
+    text-align: center;
+}
+
+.wisdom-img-text1 {
+    background-color: #D2EAC3;
+    width: 50px;
+    position: absolute;
+    left: 13.5%;
+    bottom: -50px;
+    text-align: center;
+}
+
+.wisdom-img-text2 {
+    background-color: #D2EAC3;
+    width: 130px;
+    position: absolute;
+    left: 75%;
+    bottom: -50px;
+    text-align: center;
+}
+
+.wisdom-img-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    position: relative;
+    padding: 4rem;
+    text-align: center;
+
+}
+
+.wisdom-img-bottom small {
+    color: black;
+    font-size: 1rem;
+}
+
+.wisdom-img-bottom p {
+    color: black;
+    font-size: 1.5rem;
+    line-height: 33px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+.wisdom-button {
+    background-color: black;
+    color: white;
+    height: 3.4rem;
+    margin: 30px 0px 0px 0px;
+    width: 11rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: light;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    transition: all .3s ease;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+.wisdom-button span {
+    color: white;
+    display: inline-block;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.wisdom-button:hover {
+    transform: translateY(-5px);
+    background-color: #dc7550;
+
+
+}
+
+/* =============================end of website============================= */
+
+.black{
+    padding: 5rem;
+}
+.black-box{
+    
+    background-color: #000000;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 4rem;
+}
+.casestudy{
+    background-color: white;
+    width: 120px;
+    height: 30px;
+    padding-top: 8px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.wisdom-img-bottom2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    position: relative;
+    padding: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.wisdom-img-bottom2 small {
+    color: #ffffff99;
+    font-size: 1.2rem;
+    float: right;
+    padding-right: 120px;
+}
+
+.wisdom-img-bottom2 p {
+    color: white;
+    font-size: 1.7rem;
+    line-height: 33px;
+    margin-bottom: -5px;
+    text-align: center;
+
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.first-img2 img {
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: all .3s ease-in;
+}
+.first-img2 img:hover{
+    cursor: pointer;
+    border-top-left-radius: 68rem;
+    border-top-right-radius: 68rem;
+}
+
+
