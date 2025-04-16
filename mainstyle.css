@@ -9,7 +9,7 @@ html::-webkit-scrollbar {
 }
 body {
   /* background-color: #000; */
-  /* height: 1000vh; */
+  height: 1000vh;
   font-family: "Telegraph", -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Segoe UI,
     sans-serif;
