@@ -1,0 +1,654 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav {
+    position: fixed;
+    width: 100%;
+  display: flex;
+  height: 12vh;
+  background-color: black;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 4rem;
+  padding-right: 3rem;
+  z-index: 1;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.search-bar-nav {
+  display: flex;
+  width: 30%;
+  color: white;
+  background-color: white;
+  height: fit-content;
+  align-items: center;
+  border-radius: 2rem;
+  padding-left: 1rem;
+}
+.search-bar-nav input {
+  border: none;
+  padding: 1.15rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  outline: none;
+}
+.search-bar-nav img {
+  height: 1.2rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 25%;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+button{
+    cursor: pointer;
+}
+.button-nav-bar {
+  display: flex;
+  gap: 1rem;
+}
+.button-nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+.sign-in-btn {
+  padding: .875rem;
+  font-size: 1rem;
+  color: white;
+  border: 1px solid #cb00e3;
+  background: transparent;
+  border-radius: 4px;
+  width: 6rem;
+  text-align: center;
+}
+.sign-up-btn {
+  padding: .875rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #cb00e3;
+  border: none;
+  border-radius: 4px;
+  width: 6.5rem;
+  text-align: center;
+}
+.main-img-nav {
+  height: 3rem;
+}
+.hero-section {
+  background-image:image-set(url(images-main/hero-background-image-BgRagXI3.webp));
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+    height: 42.4rem;
+    width: auto;
+}
+.hero-section h1{
+    font-size: 3.5rem;
+    width: 80%;
+}
+.hero-section p{
+    font-size: 2rem;
+    width: 65%;
+}
+.get-tickets-btn{
+    padding: 1.2rem;
+    background-color: #cb00e3;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+}
+.colored-text-hero h1{
+    background-image: image-set(url(images-main/text-clip-background-image-C7ZZyvjY.jpg));
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+    font-size: 4rem;
+    font-weight: 700;
+    -webkit-background-clip: text;
+}
+.colored-text-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 24rem;
+}
+.find-events-btn{
+    width: 16.5rem;
+    padding: 1rem;
+    border: 1px solid #cb00e3;
+    color: black;
+    background-color: transparent;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+}
+.ticketing-section{
+    background: linear-gradient(rgb(3, 10, 85), rgb(2, 11, 109));
+    color: white;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 8rem;
+}
+.secure-and-easy{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+.secure-and-easy img{
+    height: 18.4rem;
+    width: 36rem;
+    border-radius: 5px;
+}
+.secure-and-easy-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 1.2;
+    font-size: 1.7rem;
+    text-align: justify;
+    padding: 2rem;
+}
+.secure-and-easy-text h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.wide-range{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+.wide-range img{
+    height: 18.4rem;
+    width: 33.5rem;
+    border-radius: 5px;
+}
+.wide-range-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    text-align: justify;
+    padding: 1rem;
+}
+.wide-range-text h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.pink-image{
+    background-image: image-set(url(images-main/sell-ticket-effortlessly-image-BsFl2B5L.jpg));
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.left-side-pink{
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(203, 0, 227, 0.5);
+    /* opacity: .5; */
+    width: 50%;
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+.left-side-pink h1{
+    font-size: 2rem;
+    font-weight: 550;
+}
+.right-side-pink{
+    width: 50%;
+    height: auto;
+    background-color: rgba(31, 25, 25, 0.5);
+}
+.account-creation{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    background-color: #cb00e3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.account-creation h1{
+    font-size: 4.5rem;
+    width: 75%;
+    text-align: center;
+}
+.account-creation-btn{
+    color: white;
+    background: black;
+    border: none;
+    padding: 1.2rem;
+    font-size: 1rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    border-radius: 2rem;
+}
+footer{
+    display: flex;
+    padding: 4rem;
+    justify-content: space-between;
+}
+footer p{
+    color: rgb(80,80,80);
+}
+footer ul{
+    list-style: none;
+    line-height: 1.5;
+    color: rgb(80, 80, 80);
+
+}
+.icon-side-footer{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 11rem;
+}
+.icon-side-footer img{
+    height: 3rem;
+    margin-right: auto;
+}
+.icon-side-footer p{
+    width: 50%;
+    line-height: 1.5;
+}
+.services-about-footer{
+    display: flex;
+    gap: 6rem;
+    width: 40%;
+}
+.services-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.services-footer h3{
+    font-weight: 300;
+}
+.about-footer{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.about-footer h3{
+    font-weight: 300;
+}
+.socials-footer{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+.socials-footer ul{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.socials-footer img{
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.socials-footer P{
+    width: 50%;
+    padding-top: 5.6rem;
+    margin-left: auto;
+}
+.socials-footer button{
+    width: fit-content;
+    padding: .75rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgb(14, 72, 135);
+    color: white;
+    font-size: 1rem;
+}
+.find-events-footer{
+    background-color: #f5faff;
+    margin-top: 4rem;
+}
+.next-adventure{
+    height: 67vh;
+    background: linear-gradient(#000000b3, #000000b3),url(images-find-events/event-hero-bg-kDZA0R31.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-position: center;
+    background-size: cover;
+}
+.next-adventure h1{
+    font-size: 3rem;
+    color: white;
+    width: 75%;
+    text-align: center;
+    padding-top: 5rem;
+}
+.next-adventure p{
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    width: 75%;
+}
+.next-adventure-search{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.64);
+    gap: .5rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+.next-adventure-search input{
+    width: 37rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.next-adventure-search button{
+    padding: 1rem;
+    border: none;
+    width: 12rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #cb00e3;
+}
+.different-events{
+    padding-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+}
+.upcoming-events:hover{
+    background-color: #f8f9fa;
+}
+.upcoming-events{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    cursor: pointer;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.upcoming-events a{
+    text-decoration: none;
+    color: rgb(27 103 187);
+}
+.upcoming-events-text{
+    display: flex;
+    justify-content: space-between;
+}
+.different-events h1{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.different-events h2{
+    font-weight: 500;
+    font-size: 2rem;
+    color: #cb00e3;
+}
+.upcoming-events-images{
+    display: flex;
+    gap: 1.5rem;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.music-concert{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: #f3f3f3;
+    border-bottom-left-radius: .35rem;
+    border-bottom-right-radius: .35rem;
+}
+.music-concert img{
+    height: 10rem;
+    width: 16rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: .35rem;
+    border-bottom-right-radius: .35rem;
+    object-fit: cover;
+}
+.music-concert-text{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    padding: .5rem;
+}
+.sign-in-logo{
+    display: flex;
+    gap: .5rem;
+    /* margin: 1rem; */
+    align-items: center;
+    margin-bottom: auto;
+}
+.sign-in-logo img{
+    height: 2.2rem;
+    width: 2.2rem;
+    padding: .5rem;
+    border-radius: 50%;
+    background-color: rgb(70, 157, 249);
+}
+.sign-in-logo h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.sign-in-form{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in-body{
+    height: 95dvh;
+    width: auto;
+    background-color: rgb(248 249 250);
+    opacity: 1;
+    font-family: "Montserrat", sans-serif;
+    margin: 1rem;
+}
+.main-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    opacity: 1;
+}
+.email-password{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+.email-password input{
+    padding: .5rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    width: 30rem;
+    border: 1px solid rgb(210, 206, 206);
+    opacity: .6;
+    outline: none;
+    font-weight: 0;
+    font-size: 1.1rem;
+    font-family: "Montserrat", sans-serif;
+
+}
+.remember-forgot-password{
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    font-size: 1.2rem;
+    color: rgb(80, 80, 80);
+}
+.main-form h1{
+    font-weight: 550;
+}
+.main-form p{
+    text-align: center;
+    font-size: 1rem;
+}
+.main-form a{
+    text-decoration: none;
+    color: rgb(30 64 175);
+}
+.main-form button{
+    font-size: 1rem;
+    padding: .75rem;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background-color: #cb00e3;
+}
+.unforgettable-hero{
+    height: 67vh;
+    background: linear-gradient(#000000b3, #000000b3),url(images-find-events/hero-bg-D_7kZLv6.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-position: center;
+    background-size: cover;
+}
+.unforgettable-hero h1{
+    font-size: 3.5rem;
+    color: white;
+    width: 70%;
+    text-align: center;
+    padding-top: 5rem;
+}
+.unforgettable-hero p{
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    width: 74%;
+}
+.about-us-text{
+    background-color: rgb(248 249 250);
+    font-family: "Montserrat", sans-serif;
+    opacity: .95;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.about-us-text p{
+    font-size: 1.7rem;
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 100;
+}
+.about-us-text h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+
+/* sign up page styles */
+.sign-up-body{
+    margin: 1rem;
+    display: flex;
+    gap: 15rem;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(248 249 250);
+}
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: auto;
+}
+.name-password{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.name-password input{
+    padding: .5rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    width: 30rem;
+    border: 1px solid rgb(210, 206, 206);
+    opacity: .6;
+    outline: none;
+    font-weight: 0;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+.name-password p{
+    opacity: .5;
+    font-size: .8rem;
+    text-align: center;
+}
+.type-password{
+    display: flex;
+    gap: .5rem;
+}
+.weak-password{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    font-size: .8rem;
+    opacity: .9;
+}
+.line-style-password{
+    width: 7rem;
+    height: .3rem;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 2rem;
+}
+.sign-up-form button{
+    color: white;
+    background-color: #cb00e3;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background-color: #cb00e3;
+}
+#remember-me{
+    transform: scale(1.3);
+}
+.sign-up-form p{
+    text-align: center;
+}
